@@ -31,6 +31,7 @@ data_test = dataset(291:414,:)
 ```
 <h2 align="left">Part 2: Linear Regression</h2>
 Finding a linear regression model to predict the price per unit area of the house based on three housing features: house age, distance to the nearest MRT station, and number of convenient stores.
+
 ```matlab
 % Building up the linear system of equations and finding the coefficient of
 % the training data.
@@ -70,7 +71,9 @@ CTrain(4,1) = sum(X3Train.*yTrain)
 % Solving for ß
 BTrain = inv(ATrain)*CTrain
 ```
+
 Root mean square error (RMSE) is one of the metrics used to evaluate the performance of the linear regression model. Thus, the RMSE of the train and test set models were found.
+
 ```matlab
 % Train set
 yiTrain = BTrain(1)+ BTrain(2)*X1Train + BTrain(3)*X2Train + BTrain(4)*X3Train;
@@ -117,6 +120,7 @@ RMSE_test = sqrt(sum((yiTest-yTest).^2)/NTest)
 ```
 <h2 align="left">Part 3: Classification</h2>
 Building a classification model to predict whether houses will be worth below 40 dollars per unit area. A linear regression model will be applied on the train set of data and it's performance will be tested on the test data set. A copy of the data set used above is used so as not to risk using corrupt data.
+
 ```matlab
 % Creating a copy of the dataset.
 CopyDataSet = dataset
@@ -136,6 +140,7 @@ yCopyTRAIN = data_train.House_Price_of_Unit_Area
 yCopyTEST = data_test.House_Price_of_Unit_Area
 ```
 Training the model on the modified train set.
+
 ```matlab
 % Setting up the a1, a2, a3 array and the error matrix.
 % Note: It's is known that the optimal value for  is 2.1. This section serves to search for optimal values for a1 between -0.07
@@ -172,6 +177,7 @@ optimal_a2 = a2(j)
 optimal_a3 = a3(k)
 ```
 If the predicted value is less than or equal 0.5, it will be considered as 0 (lower than 40), otherwise it will be considered as 1 (higher than 40).
+
 ```matlab
 % Calculating the accuracy of the model on the train set.
 yhat = mysigmoid(a0+a1(i)*X1+a2(j)*X2+a3(k)*X3);
