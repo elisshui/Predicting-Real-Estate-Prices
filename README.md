@@ -2,20 +2,26 @@
 Predicting real estate prices through deploying a linear regressing model using MATLAB - an accuracy of 82.258% was achieved. This project was the final assessment for the MATLAB component of a university linear algebra course. The goal of this project was to gain experience and assess skills in MATLAB and machine learning.
 
 <h2 align="left">Part 1: Loading and Pre-processing the Data</h2>
+
 Loading realestate.csv into a table named dataset.
+
 ```matlab
 % This line ensures the matrix values are displayed properly.
 format short g
 ```
+
 Loading realestate.csv into a table named dataset.
+
 ```matlab
 dataset = readtable('realestate.csv')
 ```
+
 The dataset has 414 data points (rows). 
 Taking a random sample of 70% of the data (290 rows) for the training set and leaving the rest for the testing set.
 * Shuffle the table rows using randperm.
 * Store the first 290 rows in the training set in data_train.
 * Store the remainder of the rows in data_test.
+
 ```matlab
 dataset = dataset(randperm(height(dataset)), :);
 
