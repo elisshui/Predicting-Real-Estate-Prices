@@ -187,10 +187,7 @@ yhat(yhat <= 0.5) = 0;
 yhat(yhat > 0.5) = 1;
 
 accTesT = func_accuracy(yhat,yCopyTEST)
-```
 
-<h2 align="left">Part 4: Functions Used</h2>
-```matlab
 function f = mysigmoid(x)
     f = 1./(1+exp(-x));
 end
@@ -205,4 +202,7 @@ equalYs= (yhat == yCopyTEST);
 accTest = sum(equalYs/length(equalYs))*100;
 end
 ```
+
+<h2 align="left">Part 4: Functions Used</h2>
+Project by [Eliss Hui](https://github.com/elisshui "Eliss Hui") (Nov 2021 - Jan 2022)
 
