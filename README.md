@@ -157,7 +157,7 @@ X2 = data_train.Distance_to_Nearest_MRT_station
 X3 = data_train.Number_of_Convenience_Stores
 ```
 ```matlab
-% Calculating the error for all combinations use for loops using the "mysigmoid" function created in the "Functions Used" section at the bottom.
+% Calculating the error for all combinations use for loops using the "mysigmoid" function created in the "Part 4: Functions Used" section below.
 for i = 1:1:40
     for j = 1:1:40
         for k = 1:1:40
@@ -193,7 +193,7 @@ test3 = data_test.Number_of_Convenience_Stores;
 testy = data_test.House_Price_of_Unit_Area;
 ```
 
-<h2 align="left">Functions Used:</h2>
+<h2 align="left">Part 4: Functions Used:</h2>
 
 ```matlab
 % Functions Used:
@@ -212,4 +212,5 @@ accTest = sum(equalYs/length(equalYs))*100;
 end
 ```
 
+---
 Project by [Eliss Hui](https://github.com/elisshui "Eliss Hui") (Nov 2021)
