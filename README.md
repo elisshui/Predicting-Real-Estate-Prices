@@ -191,7 +191,11 @@ test1 = data_test.House_Age;
 test2 = data_test.Distance_to_Nearest_MRT_station;
 test3 = data_test.Number_of_Convenience_Stores;
 testy = data_test.House_Price_of_Unit_Area;
+```
 
+<h2 align="left">Functions Used:</h2>
+
+```matlab
 % Functions Used:
 function f = mysigmoid(x)
     f = 1./(1+exp(-x));
