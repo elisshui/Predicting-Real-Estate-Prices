@@ -190,7 +190,8 @@ accTesT = func_accuracy(yhat,yCopyTEST)
 ```
 
 <h2 align="left">Part 4: Functions Used</h2>
-```
+```matlab
+% Functions
 function f = mysigmoid(x)
     f = 1./(1+exp(-x));
 end
