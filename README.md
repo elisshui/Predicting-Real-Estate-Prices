@@ -203,6 +203,5 @@ accTest = sum(equalYs/length(equalYs))*100;
 end
 ```
 
-<h2 align="left">Part 4: Functions Used</h2>
-Project by [Eliss Hui](https://github.com/elisshui "Eliss Hui") (Nov 2021 - Jan 2022)
+Project by [Eliss Hui](https://github.com/elisshui "Eliss Hui") (Nov 2021)
 
