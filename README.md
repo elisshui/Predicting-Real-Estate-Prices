@@ -196,7 +196,7 @@ testy = data_test.House_Price_of_Unit_Area;
 <h2 align="left">Part 4: Functions Used:</h2>
 
 ```matlab
-% Functions Used:
+% Functions Used
 function f = mysigmoid(x)
     f = 1./(1+exp(-x));
 end
