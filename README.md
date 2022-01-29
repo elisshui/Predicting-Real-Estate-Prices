@@ -190,3 +190,19 @@ accTesT = func_accuracy(yhat,yCopyTEST)
 ```
 
 <h2 align="left">Part 4: Functions Used</h2>
+```matlab
+function f = mysigmoid(x)
+    f = 1./(1+exp(-x));
+end
+
+function accTrain = myfunc_accuracy(yhat,yCopyTRAIN)
+equalYs= (yhat == yCopyTRAIN);
+accTrain = sum(equalYs/length(equalYs))*100;
+end
+
+function accTest = func_accuracy(yhat,yCopyTEST)
+equalYs= (yhat == yCopyTEST);
+accTest = sum(equalYs/length(equalYs))*100;
+end
+```
+
