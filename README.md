@@ -23,7 +23,7 @@ dataset = dataset(randperm(height(dataset)), :);
 data_train = dataset(1:290,:)
 data_test = dataset(291:414,:)
 ```
-# Part 2: Linear Regression
+<h2 align="left">Part 2: Linear Regression</h2>
 Finding a linear regression model to predict the price per unit area of the house based on three housing features: house age, distance to the nearest MRT station, and number of convenient stores.
 ```matlab
 % Building up the linear system of equations and finding the coefficient of
@@ -109,7 +109,7 @@ Btest = inv(ATest)*CTest
 yiTest = Btest(1)+ Btest(2)*X1Test + Btest(3)*X2Test + Btest(4)*X3Test;
 RMSE_test = sqrt(sum((yiTest-yTest).^2)/NTest)
 ```
-# Part 3. Classification
+<h2 align="left">Part 3. Classification</h2>
 Building a classification model to predict whether houses will be worth below 40 dollars per unit area. A linear regression model will be applied on the train set of data and it's performance will be tested on the test data set.
 
 A copy of the data set used above is used so as not to risk using corrupt data.
@@ -189,7 +189,7 @@ yhat(yhat > 0.5) = 1;
 accTesT = func_accuracy(yhat,yCopyTEST)
 ```
 
-# Part 4. Functions
+<h2 align="left">Part 4. Functions</h2>
 ```matlab
 function f = mysigmoid(x)
     f = 1./(1+exp(-x));
