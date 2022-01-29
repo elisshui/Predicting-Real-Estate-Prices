@@ -1,7 +1,7 @@
 <h1 align="center">Predicting Real Estate Prices (MATLAB)</h1>
 Predicting real estate prices through deploying a linear regressing model using MATLAB - an accuracy of 82.258% was achieved. This project was the final assessment for the MATLAB component of a university linear algebra course. The goal of this project was to gain experience and assess skills in MATLAB and machine learning.
 
-# Part 1: Loading and Preprocessing the Data
+<h2 align="left">Part 1: Loading and Preprocessing the Data</h2>
 Loading realestate.csv into a table named dataset.
 ```matlab
 % This line ensures the matrix values are displayed properly.
@@ -14,8 +14,8 @@ dataset = readtable('realestate.csv')
 The dataset has 414 data points (rows). 
 Taking a random sample of 70% of the data (290 rows) for the training set and leaving the rest for the testing set.
 * Shuffle the table rows using randperm.
-* Store the first 290 rows in the training set in data_train
-* Store the remainder of the rows in data_test
+* Store the first 290 rows in the training set in data_train.
+* Store the remainder of the rows in data_test.
 ```matlab
 dataset = dataset(randperm(height(dataset)), :);
 
@@ -134,8 +134,8 @@ yCopyTEST = data_test.House_Price_of_Unit_Area
 Training the model on the modified train set.
 ```matlab
 % Setting up the a1, a2, a3 array and the error matrix.
-% Note: It's is known that the optimal value for  is 2.1. This section serves to search for optimal values for a1 between -0.07 and -0.05,
-% a2 between -0.003 and -0.001 and a3 between 0.1 and 0.3, each with a step-space of 40.
+% Note: It's is known that the optimal value for  is 2.1. This section serves to search for optimal values for a1 between -0.07
+% and -0.05, a2 between -0.003 and -0.001 and a3 between 0.1 and 0.3, each with a step-space of 40.
 
 Error = []
 a0 = 2.1
