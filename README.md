@@ -184,12 +184,6 @@ testy = data_test.House_Price_of_Unit_Area;
 ```
 <h2 align="left">Part 4: Functions Used</h2>
 ```matlab
-yhat = mysigmoid(a0+a1(i)*test1+a2(j)*test2+a3(k)*test3);
-yhat(yhat <= 0.5) = 0;
-yhat(yhat > 0.5) = 1;
-
-accTesT = func_accuracy(yhat,yCopyTEST)
-
 function f = mysigmoid(x)
     f = 1./(1+exp(-x));
 end
