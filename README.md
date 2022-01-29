@@ -181,7 +181,9 @@ test1 = data_test.House_Age;
 test2 = data_test.Distance_to_Nearest_MRT_station;
 test3 = data_test.Number_of_Convenience_Stores;
 testy = data_test.House_Price_of_Unit_Area;
-
+```
+<h2 align="left">Part 4: Functions Used</h2>
+```matlab
 yhat = mysigmoid(a0+a1(i)*test1+a2(j)*test2+a3(k)*test3);
 yhat(yhat <= 0.5) = 0;
 yhat(yhat > 0.5) = 1;
