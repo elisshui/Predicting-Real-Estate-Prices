@@ -109,7 +109,7 @@ Btest = inv(ATest)*CTest
 yiTest = Btest(1)+ Btest(2)*X1Test + Btest(3)*X2Test + Btest(4)*X3Test;
 RMSE_test = sqrt(sum((yiTest-yTest).^2)/NTest)
 ```
-<h2 align="left">Part 3. Classification</h2>
+<h2 align="left">Part 3: Classification</h2>
 Building a classification model to predict whether houses will be worth below 40 dollars per unit area. A linear regression model will be applied on the train set of data and it's performance will be tested on the test data set.
 
 A copy of the data set used above is used so as not to risk using corrupt data.
@@ -189,7 +189,7 @@ yhat(yhat > 0.5) = 1;
 accTesT = func_accuracy(yhat,yCopyTEST)
 ```
 
-<h2 align="left">Part 4. Functions</h2>
+<h2 align="left">Part 4: Functions Used</h2>
 ```matlab
 function f = mysigmoid(x)
     f = 1./(1+exp(-x));
