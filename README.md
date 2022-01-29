@@ -112,7 +112,7 @@ RMSE_test = sqrt(sum((yiTest-yTest).^2)/NTest)
 # Part 3. Classification
 Building a classification model to predict whether houses will be worth below 40 dollars per unit area. A linear regression model will be applied on the train set of data and it's performance will be tested on the test data set.
 
-A copy of the data set used above so as not to risk using corrupt or corrupting the data.
+A copy of the data set used above is used so as not to risk using corrupt data.
 ```matlab
 % Creating a copy of the dataset.
 CopyDataSet = dataset
@@ -134,7 +134,8 @@ yCopyTEST = data_test.House_Price_of_Unit_Area
 Training the model on the modified train set.
 ```matlab
 % Setting up the a1, a2, a3 array and the error matrix.
-% Note: It's is known that the optimal value for  is 2.1. This section serves to search for optimal values for a1 between -0.07 and -0.05, a2 between -0.003 and -0.001 and a3 between 0.1 and 0.3, each with a step-space of 40.
+% Note: It's is known that the optimal value for  is 2.1. This section serves to search for optimal values for a1 between -0.07 and -0.05,
+% a2 between -0.003 and -0.001 and a3 between 0.1 and 0.3, each with a step-space of 40.
 
 Error = []
 a0 = 2.1
