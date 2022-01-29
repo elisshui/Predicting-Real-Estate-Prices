@@ -1,7 +1,7 @@
 <h1 align="center">Predicting Real Estate Prices (MATLAB)</h1>
 Predicting real estate prices through deploying a linear regressing model using MATLAB - an accuracy of 82.258% was achieved. This project was the final assessment for the MATLAB component of a university linear algebra course. The goal of this project was to gain experience and assess skills in MATLAB and machine learning.
 
-<h2 align="left">Part 1: Loading and Preprocessing the Data</h2>
+<h2 align="left">Part 1: Loading and Pre-processing the Data</h2>
 Loading realestate.csv into a table named dataset.
 ```matlab
 % This line ensures the matrix values are displayed properly.
@@ -205,6 +205,5 @@ equalYs= (yhat == yCopyTEST);
 accTest = sum(equalYs/length(equalYs))*100;
 end
 ```
----
 
 Project by [Eliss Hui](https://github.com/elisshui "Eliss Hui") (Nov 2021)
