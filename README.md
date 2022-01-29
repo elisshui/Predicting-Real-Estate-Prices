@@ -205,5 +205,3 @@ equalYs= (yhat == yCopyTEST);
 accTest = sum(equalYs/length(equalYs))*100;
 end
 ```
-
-Project by [Eliss Hui](https://github.com/elisshui "Eliss Hui") (Nov 2021)
